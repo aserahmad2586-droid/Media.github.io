@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #1f2937;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-primary {
+            background-color: #4f46e5;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #4338ca;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased leading-relaxed">
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-24 px-4 sm:px-6 lg:px-8 text-center rounded-b-3xl shadow-xl">
+        <div class="container mx-auto">
+            <div class="max-w-3xl mx-auto">
+                <img src="aser.png" alt="My Photo" class="rounded-full w-40 h-auto mx-auto mb-6 shadow-lg">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">Aser Ahmed Khaled</h1>
+                <p class="text-lg sm:text-xl lg:text-2xl font-medium mb-8">Media Specialist for Online Math Education</p>
+                <a href="#portfolio" class="btn-primary inline-block">View My Work</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+
+        <!-- About Me Section -->
+        <section id="about" class="text-center max-w-4xl mx-auto">
+            <h2 class="section-title mb-8">About Me</h2>
+            <p class="text-lg sm:text-xl text-gray-700 leading-relaxed">
+                I specialize in creating professional and engaging educational content. With a strong background in <B>Microsoft Word</B>, <B>Canva</B>, <B>PowerPoint</B>, and <B>AI</B> I transform complex ideas into clear and visually appealing materials. My expertise in <B>LaTeX</B> allows me to produce perfectly formatted mathematical content, making it easy for students to learn and for educators to teach. I am passionate about leveraging media to enhance the learning experience in math and beyond.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="text-center">
+            <h2 class="section-title mb-12">My Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card p-8 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-100 rounded-full mb-4">
+                        <i data-feather="file-text" class="w-8 h-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Microsoft Word</h3>
+                    <p class="text-gray-600">Document creation, formatting, and template design.</p>
+                </div>
+                <div class="card p-8 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-100 rounded-full mb-4">
+                        <i data-feather="bar-chart-2" class="w-8 h-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Presentations</h3>
+                    <p class="text-gray-600">Building compelling and visually engaging slide decks.</p>
+                </div>
+                <div class="card p-8 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-100 rounded-full mb-4">
+                        <i data-feather="image" class="w-8 h-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Canva</h3>
+                    <p class="text-gray-600">Infographics, social media graphics, and visual content.</p>
+                </div>
+                <div class="card p-8 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-100 rounded-full mb-4">
+                        <i data-feather="code" class="w-8 h-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">LaTeX</h3>
+                    <p class="text-gray-600">Professional typesetting for complex mathematical equations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="max-w-5xl mx-auto">
+            <h2 class="section-title mb-12 text-center">My Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Sample 1: LaTeX Worksheet -->
+                <div class="card p-6">
+                    <div class="aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center mb-6">
+                        <img src="LaTeX.png" alt="Math Worksheet Sample" class="w-full h-auto">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">LaTeX Math Worksheet</h3>
+                    <p class="text-gray-600 mb-4">A sample worksheet created with LaTeX, demonstrating professional formatting for equations, fractions, and geometry symbols.
+                        <a href="https://drive.google.com/drive/folders/1GbDJRbnXq4lnnl9TVknPZ257LrsKuNoL?usp=sharing" class="text-purple-600 hover:underline">View PDF</a>
+                    </p>
+                </div>
+                <!-- Sample 2: Canva Infographic -->
+                <div class="card p-6">
+                    <div class="aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center mb-6">
+                        <img src="Media.png" alt="Infographic Sample" class="w-full h-auto">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Canva Infographic</h3>
+                    <p class="text-gray-600 mb-4">A visual explanation of the benefits of using LaTeX, combining graphic design and technical communication.
+                        <a href="https://drive.google.com/drive/folders/1VmJlqfNetvR8ictHWna3VELL6avZ1FcN?usp=sharing" class="text-purple-600 hover:underline">View Infographic</a>
+                    </p>
+                </div>
+                <!-- Sample 3: Presentation Slide -->
+                <div class="card p-6">
+                    <div class="aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center mb-6">
+                        <img src="Presentation.png" alt="Presentation Slide Sample" class="w-full h-auto">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Presentation Sample</h3>
+                    <p class="text-gray-600 mb-4">An example slide from a lesson plan, designed to be clear and visually engaging for an online audience.
+                        <a href="https://drive.google.com/drive/folders/1zOBWXt_RMGAF2xaB2gf78CInswWsNdLk?usp=sharing" class="text-purple-600 hover:underline">View Presentation</a>
+                    </p>
+                </div>
+                <!-- Sample 4: Word Document -->
+                <div class="card p-6">
+                    <div class="aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center mb-6">
+                        <img src="Word.png" alt="Word Document Sample" class="w-full h-auto">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Word Document Template</h3>
+                    <p class="text-gray-600 mb-4">A sample template for a student study guide, showcasing consistent formatting and a clean layout.
+                        <a href="https://drive.google.com/drive/folders/10SNBfEoLz10pWz5RxSCtky3D-gC0zwxY?usp=sharing" class="text-purple-600 hover:underline">View Document</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="max-w-4xl mx-auto text-center">
+            <h2 class="section-title mb-8">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-8">I'm ready to help create exceptional educational content. Feel free to reach out to discuss your needs.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button id="copy-email-btn" class="btn-primary flex items-center gap-2">
+                    <i data-feather="mail" class="w-5 h-5"></i>
+                    <span id="email-text">aserahmad2586@gmail.com</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-8 text-gray-600">
+        <p>&copy; 2025 Aser Ahmed. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Feather icons
+        feather.replace();
+
+        document.getElementById('copy-email-btn').addEventListener('click', function() {
+            const emailText = "copy@email.com";
+            // Use a temporary textarea to copy the text
+            const tempInput = document.createElement('textarea');
+            tempInput.value = emailText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // Change button text to indicate success
+            const emailSpan = document.getElementById('email-text');
+            const originalText = emailSpan.innerText;
+            emailSpan.innerText = "Copied!";
+            
+            // Revert back after a short delay
+            setTimeout(() => {
+                emailSpan.innerText = originalText;
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
